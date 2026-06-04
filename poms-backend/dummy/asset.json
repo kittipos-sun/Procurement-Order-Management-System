@@ -1,0 +1,42 @@
+{
+    "R001": {
+        "receiptId": "R001",
+        "purchaseOrderId": "PO001",
+        "purchaseRequestId": "PR001",
+        "receivedDate": "2023-10-10",
+        "referenceNumber": "PO001",
+        "company": "บริษัท นันทนาอินฟอร์มครึ่งเซิลเตมิ้",
+        "department": "ฝ่ายการตลาด",
+        "createdBy": "สมชาย ใจดี",
+        "phone": "08-1234-5678",
+        "createdAt": "2023-10-10T12:00:00Z",
+        "updatedAt": "2023-10-10T12:00:00Z",
+        "status": "Completed",
+        "totalReceived": 10,
+        "items": [
+            {
+                "itemId": "PR001-001",
+                "receiptItemId": "RI001",
+                "description": "A4 Paper",
+                "unit": "Ream",
+                "orderedQuantity": 10,
+                "receivedQuantity": 10,
+                "unitPrice": 100,
+                "totalItemPrice": 1000,
+                "quality": 9,
+                "receivedDate": "2023-10-10",
+                "details": [
+                    {
+                        "detailId": "D001",
+                        "receivedQuantity": 10,
+                        "receivedDate": "2023-10-10",
+                        "quality": 9,
+                        "notes": "",
+                        "createdAt": "2023-10-10T12:00:00Z",
+                        "updatedAt": "2023-10-10T12:00:00Z"
+                    }
+                ]
+            }
+        ]
+    }
+}

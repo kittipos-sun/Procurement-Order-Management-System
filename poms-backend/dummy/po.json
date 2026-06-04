@@ -1,0 +1,49 @@
+{
+  "PO001": {
+    "purchaseOrderId": "PO001",
+    "purchaseRequestId": "PR001",
+    "company": "บริษัท นันทนาอินฟอร์มครึ่งเซิลเตมิ้",
+    "department": "ฝ่ายการตลาด",
+    "createdBy": "สมชาย ใจดี",
+    "phone": "08-1234-5678",
+    "createdAt": "2023-10-10T09:30:00Z",
+    "sellerName": "Sun Office Supplies",
+    "sellerContact": "099-123-4567",
+    "sellerAddress": "123 ถนนสาทร แขวงสีลม เขตบางรัก กรุงเทพฯ 10500",
+    "description": "PO สำหรับคำขอซื้อวัสดุสำนักงาน",
+    "requiredDate": "2023-11-15",
+    "paymentTerms": "Net 30",
+    "status": "Pending",
+    "items": [
+      {
+        "itemId": "PR001-001",
+        "description": "กระดาษ A4",
+        "unit": "รีม",
+        "unitPrice": 100,
+        "quantity": 100,
+        "totalItemPrice": 10000,
+        "discount": 0,
+        "receivedQuantity": 100,
+        "notes": ""
+      },
+      {
+        "itemId": "PR001-002",
+        "description": "ปากกา",
+        "unit": "ด้าม",
+        "unitPrice": 50,
+        "quantity": 10,
+        "totalItemPrice": 500,
+        "discount": 0,
+        "receivedQuantity": 10,
+        "notes": ""
+      }
+    ],
+    "trackingNumber": "P06/108-002",
+    "updatedAt": "2025-04-03T23:51:50.915Z",
+    "notes": "",
+    "approvalStatus": {
+      "approvedBy": "Unknown",
+      "approvedAt": ""
+    }
+  }
+}

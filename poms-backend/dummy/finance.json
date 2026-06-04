@@ -1,0 +1,42 @@
+{
+    "financialData": {
+      "income": 1250000,
+      "totalProfit": 750000,
+      "expenses": 500000,
+      "debt": 250000
+    },
+    "debts": [
+      {
+        "id": 1,
+        "name": "Office Rent",
+        "amount": 50000,
+        "dueDate": "2023-12-15",
+        "status": "Pending"
+      },
+      {
+        "id": 2,
+        "name": "Supplier Payment",
+        "amount": 100000,
+        "dueDate": "2023-12-20",
+        "status": "Pending"
+      },
+      {
+        "id": 3,
+        "name": "Utility Bills",
+        "amount": 25000,
+        "dueDate": "2023-12-10",
+        "status": "Paid"
+      },
+      {
+        "id": 4,
+        "name": "Employee Salaries",
+        "amount": 75000,
+        "dueDate": "2023-12-05",
+        "status": "Paid"
+      }
+    ],
+    "monthlyItems": {
+      "labels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+      "data": [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200]
+    }
+  }

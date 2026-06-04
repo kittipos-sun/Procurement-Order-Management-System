@@ -1,0 +1,9 @@
+node_modules
+node_modules/
+poms-backend/node_modules/
+poms-frontend/node_modules/
+poms-frontend/dist/
+.env
+*.env
+.DS_Store
+Thumbs.db

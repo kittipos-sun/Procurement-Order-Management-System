@@ -1,0 +1,159 @@
+{
+  "PR001": {
+    "company": "บริษัท นันทนาอินฟอร์มครึ่งเซิลเตมิ้",
+    "department": "ฝ่ายการตลาด",
+    "position": "ผู้จัดการฝ่าย",
+    "createdBy": "สมชาย ใจดี",
+    "phone": "08-1234-5678",
+    "createdAt": "2025-04-03T17:16:49.522Z",
+    "requestDate": "2023-10-10",
+    "requiredDate": "2023-11-15",
+    "description": "คำขอซื้อจากแผนก ฝ่ายการตลาด",
+    "status": "Approved",
+    "totalPrice": 4425,
+    "approver": "",
+    "purchasingOfficer": "นางสาวสมหญิง จัดซื้อ",
+    "approveDate": "2025-04-03T23:08:32.855Z",
+    "isApproved": false,
+    "item": [
+      {
+        "itemId": "PR001-001",
+        "description": "กระดาษ A4",
+        "unit": "รีม",
+        "unitPrice": 120,
+        "quantity": 20,
+        "remarks": "สำหรับพิมพ์เอกสารโปรโมชั่น",
+        "totalItemPrice": 2400
+      },
+      {
+        "itemId": "PR001-002",
+        "description": "ปากกาไวท์บอร์ด",
+        "unit": "ชุด",
+        "unitPrice": 150,
+        "quantity": 12,
+        "remarks": "สีละ 3 ด้าม (แดง, น้ำเงิน, ดำ)",
+        "totalItemPrice": 1800
+      },
+      {
+        "itemId": "PR001-003",
+        "description": "โพสต์อิท",
+        "unit": "กล่อง",
+        "unitPrice": 45,
+        "quantity": 5,
+        "remarks": "ขนาด 3x3 นิ้ว",
+        "totalItemPrice": 225
+      }
+    ]
+  },
+  "PR002": {
+    "company": "บริษัท นันทนาอินฟอร์มครึ่งเซิลเตมิ้",
+    "department": "ฝ่ายไอที",
+    "position": "ผู้พัฒนาซอฟต์แวร์",
+    "createdBy": "สมชาย ใจดี",
+    "phone": "08-1234-5678",
+    "createdAt": "2025-04-03T18:03:28.991Z",
+    "requestDate": "2025-04-03",
+    "requiredDate": "2025-04-26",
+    "description": "คำขอซื้อจากแผนก ฝ่ายไอที",
+    "status": "Rejected",
+    "totalPrice": 620,
+    "approver": "",
+    "purchasingOfficer": "นางสาวสมหญิง จัดซื้อ",
+    "approveDate": "2025-04-03T20:15:39.723Z",
+    "isApproved": true,
+    "item": [
+      {
+        "itemId": "PR002-001",
+        "description": "กระดาษ A4",
+        "unit": "รีม",
+        "unitPrice": 120,
+        "quantity": 5,
+        "remarks": "สำหรับพิมพ์เอกสารทั่วไป",
+        "totalItemPrice": 600
+      },
+      {
+        "itemId": "PR002-002",
+        "description": "คอมพิวเตอร์",
+        "unit": "เครื่อง",
+        "unitPrice": 20,
+        "quantity": 1,
+        "remarks": "บลาๆๆๆๆ",
+        "totalItemPrice": 20
+      }
+    ]
+  },
+  "PR003": {
+    "company": "บริษัท นันทนาอินฟอร์มครึ่งเซิลเตมิ้",
+    "department": "ฝ่ายไอที",
+    "position": "ผู้พัฒนาซอฟต์แวร์",
+    "createdBy": "สมชาย ใจดี",
+    "phone": "08-1234-5678",
+    "createdAt": "2025-04-03T18:03:28.991Z",
+    "requestDate": "2025-04-03",
+    "requiredDate": "2025-04-26",
+    "description": "คำขอซื้อจากแผนก ฝ่ายไอที",
+    "status": "Pending",
+    "totalPrice": 620,
+    "approver": "",
+    "purchasingOfficer": "นางสาวสมหญิง จัดซื้อ",
+    "approveDate": "2025-04-03T20:15:39.723Z",
+    "isApproved": true,
+    "item": [
+      {
+        "itemId": "PR003-001",
+        "description": "กระดาษ A4",
+        "unit": "รีม",
+        "unitPrice": 120,
+        "quantity": 5,
+        "remarks": "สำหรับพิมพ์เอกสารทั่วไป",
+        "totalItemPrice": 600
+      },
+      {
+        "itemId": "PR003-002",
+        "description": "คอมพิวเตอร์",
+        "unit": "เครื่อง",
+        "unitPrice": 20,
+        "quantity": 1,
+        "remarks": "บลาๆๆๆๆ",
+        "totalItemPrice": 20
+      }
+    ]
+  },
+  "PR004": {
+    "company": "บริษัท นันทนาอินฟอร์มครึ่งเซิลเตมิ้",
+    "department": "ฝ่ายทรัพยากรบุคคล",
+    "position": "ผู้จัดการฝ่าย",
+    "createdBy": "สมชาย ใจดี",
+    "phone": "08-1234-5678",
+    "createdAt": "2025-04-03T18:45:00.000Z",
+    "requestDate": "2025-04-03",
+    "requiredDate": "2025-04-30",
+    "description": "คำขอซื้อจากแผนก ฝ่ายทรัพยากรบุคคล",
+    "status": "Approved",
+    "totalPrice": 1500,
+    "approver": "",
+    "purchasingOfficer": "นางสาวสมหญิง จัดซื้อ",
+    "approveDate": "2025-04-03T21:00:00.000Z",
+    "isApproved": true,
+    "item": [
+      {
+        "itemId": "PR004-001",
+        "description": "ปากกาเจล",
+        "unit": "กล่อง",
+        "unitPrice": 100,
+        "quantity": 10,
+        "remarks": "สีดำ",
+        "totalItemPrice": 1000
+      },
+      {
+        "itemId": "PR004-002",
+        "description": "แฟ้มเอกสาร",
+        "unit": "แพ็ค",
+        "unitPrice": 50,
+        "quantity": 10,
+        "remarks": "A4",
+        "totalItemPrice": 500
+      }
+    ]
+  }
+}
