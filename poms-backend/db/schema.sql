@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS poms_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE poms_db;
+CREATE TABLE IF NOT EXISTS poms_documents (
+  collection_name VARCHAR(80) NOT NULL,
+  document_id VARCHAR(120) NOT NULL,
+  payload JSON NOT NULL,
+  updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (collection_name, document_id)
+) ENGINE=InnoDB;

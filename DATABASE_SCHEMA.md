@@ -1,8 +1,19 @@
 # Data Schema - CSI204-POMS
 
-The backend uses local JSON files instead of a relational database. The files are stored in `poms-backend/dummy` and `poms-backend/api/Auth/users.json`.
+The backend uses MySQL database `poms_db`. The API preserves the existing document-shaped payloads in `poms_documents`, while the old JSON files are used only as first-run seed fixtures when the MySQL collection is empty.
 
-## Files
+## MySQL table
+
+| Column | Type | Purpose |
+|---|---|---|
+| `collection_name` | `VARCHAR(80)` | Logical collection such as `users` or `purchase_requests` |
+| `document_id` | `VARCHAR(120)` | Stable record ID such as `U001` or `PR001` |
+| `payload` | `JSON` | Complete API document payload |
+| `updated_at` | `TIMESTAMP` | Last persistence time |
+
+The primary key is `(collection_name, document_id)`. Writes are persisted in a MySQL transaction by the backend data adapter.
+
+## Legacy seed files
 
 | File | Purpose |
 | --- | --- |
@@ -11,7 +22,7 @@ The backend uses local JSON files instead of a relational database. The files ar
 | `dummy/asset.json` | Asset receipt records keyed by receipt ID |
 | `dummy/finance.json` | Finance dashboard, debt, and monthly item data |
 | `dummy/db.json` | Normalized sample dataset for PR, PO, receipt, and notification data |
-| `api/Auth/users.json` | Application users for authentication and authorization |
+| `api/Auth/users.json` | First-run seed users; not used as the runtime database |
 
 ## `users.json`
 
@@ -102,8 +113,10 @@ Top-level object keyed by purchase request ID, for example `PR001`.
 
 ```mermaid
 erDiagram
-  USER ||--o{ PURCHASE_REQUEST : creates
+USER ||--o{ PURCHASE_REQUEST : creates
   PURCHASE_REQUEST ||--o| PURCHASE_ORDER : becomes
   PURCHASE_ORDER ||--o{ ASSET_RECEIPT : received_by
   PURCHASE_REQUEST ||--o{ NOTIFICATION : triggers
 ```
+
+The JSON payload keeps the original nested relationships for API compatibility. A future normalization pass can split these documents into relational tables without changing the external API.

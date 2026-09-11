@@ -64,6 +64,7 @@ const PurchasingDashboard = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState(null);
   const { user } = useAuth();
+  const nextPRId = `PR${String(orders.length + 1).padStart(3, "0")}`;
 
   const [formData, setFormData] = useState({
     company: "CSI206 Company",
@@ -75,7 +76,7 @@ const PurchasingDashboard = () => {
     requestDate: new Date().toISOString().split("T")[0],
     requester: "",
     approver: "",
-    purchasingOfficer: user.display_name,
+    purchasingOfficer: user?.display_name || "",
     approveDate: "",
     isApproved: false,
     items: [{}],

@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const fs = require("fs");
+const fs = require("../../db/mysqlStore");
 const path = require("path");
 
 const dbPath = path.join(__dirname, '../../dummy/db.json');

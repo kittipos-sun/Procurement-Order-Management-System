@@ -47,7 +47,7 @@ const Dashboard = () => {
           fetch("http://localhost:3000/api/purchase-orders/")
         ]);
 
-        const { financialData, debts, monthlyItems } = await financialRes.json();
+        const { financialData, debts } = await financialRes.json();
         const ordersData = await ordersRes.json();
 
         setFinancialData(financialData);

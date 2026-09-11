@@ -55,7 +55,7 @@ const LoginPage = () => {
       } else {
         HandleLoginError();
       }
-    } catch (err) {
+    } catch {
       setError("Invalid username or password");
       HandleLoginError(error);
       document.getElementById("password").value = "";

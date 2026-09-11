@@ -91,7 +91,6 @@ const AccountingDashboard = () => {
   // State สำหรับการจัดการทั้งหมด
   const [selectedMonth, setSelectedMonth] = useState("");
   const [showPOViewer, setShowPOViewer] = useState(false);
-  const [selectedOrder, setSelectedOrder] = useState(null);
   const [formData, setFormData] = useState({
     documentNumber: "PO-2025-001",
     documentDate: "2025-04-04",
@@ -188,18 +187,8 @@ const AccountingDashboard = () => {
     },
   ];
 
-  // Department budget data for bar chart
-  const departmentData = Object.entries(data.company_budget.departments).map(
-    ([dept, values]) => ({
-      name: dept,
-      used: values.used_budget,
-      remaining: values.remaining_budget,
-    })
-  );
-
   // Functions for purchase history
   const handleViewPO = (order) => {
-    setSelectedOrder(order);
     setShowPOViewer(true);
     setFormData({
       ...formData,

@@ -9,6 +9,7 @@ const purchaseOrdersRoute = require('./api/PurchaseOrder/purchaseOrders.js');
 const assetReceiptsRoute = require('./api/AssetReceipt/assetReceipts.js');
 const notificationsRoute = require('./api/Notification/notifications.js');
 const financeRouter = require('./api/Finance/finance');
+const { initializeStore } = require('./db/mysqlStore');
 
 app.use(cors({
   origin: ['http://localhost:5173', 'http://127.0.0.1:5173'], // อนุญาตทั้ง localhost และ 127.0.0.1
@@ -29,7 +30,7 @@ app.use('/api/finance', financeRouter);
 app.use('/api/auth', authRouter);
 app.use('/api/users', userRouter);
 //
-const port = 3000;
-app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
-});
+const port = Number(process.env.API_PORT || 3000);
+initializeStore()
+  .then(() => app.listen(port, () => console.log(`Server running on http://localhost:${port}`)))
+  .catch((error) => { console.error('Database initialization failed:', error); process.exit(1); });

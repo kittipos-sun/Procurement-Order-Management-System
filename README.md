@@ -4,6 +4,19 @@ Procurement Order Management System (POMS) is a React and Express application fo
 
 ## Screenshots
 
+![Portfolio project visual](docs/screenshots/design-01.png)
+
+> Role images are captured from the running frontend with the local backend and database connected.
+
+### Role-based UI
+
+| Role | Preview |
+| --- | --- |
+| Admin | ![Admin user management](docs/screenshots/roles/role-admin.png) |
+| Purchasing | ![Purchasing dashboard](docs/screenshots/roles/role-purchasing.png) |
+| Accounting | ![Accounting dashboard](docs/screenshots/roles/role-accounting.png) |
+| Administrative | ![Administrative dashboard](docs/screenshots/roles/role-administrative.png) |
+
 <p align="center">
   <img src="docs/screenshots/overview.png" alt="Project overview screenshot" width="800">
 </p>
@@ -24,7 +37,7 @@ Procurement Order Management System (POMS) is a React and Express application fo
 | --- | --- |
 | Frontend | React 19, Vite, React Router, Tailwind CSS, Recharts, SweetAlert2 |
 | Backend | Node.js, Express, JSON Web Token, bcryptjs |
-| Data store | Local JSON files in `poms-backend/dummy` and `poms-backend/api/Auth/users.json` |
+| Data store | MySQL (`poms_db`) through the backend data layer |
 
 ## Project Structure
 
@@ -43,6 +56,8 @@ CSI204-POMS-main/
 ```bash
 cd poms-backend
 npm install
+$env:POMS_DB_PASSWORD="your_mysql_password"
+$env:DB_NAME="poms_db"
 node server.js
 ```
 
@@ -87,7 +102,7 @@ Change this before using the project outside a local demo.
 
 ## Database / Data Schema
 
-This project currently uses JSON files as a mock database. The structure is documented in `DATABASE_SCHEMA.md`.
+The backend persists the existing document-shaped records in MySQL table `poms_documents`. On first startup it creates `poms_db` and imports the JSON fixtures only when the corresponding MySQL collection is empty. The schema and migration details are documented in `DATABASE_SCHEMA.md` and `poms-backend/db/schema.sql`.
 
 ## GitHub Notes
 
